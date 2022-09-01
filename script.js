@@ -8,9 +8,14 @@ list.forEach((item) =>
 item.addEventListener('click',activeLink))
 
 
-function osmond(){
-    var o = document.querySelector(".dropdown-link");
-    if(o.){
 
+
+let click = document.querySelector(".dropdown-link");
+
+function dropDown(){
+    if (click.style.display == 'none'){
+        click.style.display = 'flex';
+    }else {
+        click.style.display = 'none'
     }
 }
