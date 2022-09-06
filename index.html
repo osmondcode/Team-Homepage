@@ -14,7 +14,7 @@
         <nav>
             <!-- LEFT NAVIGATION -->
             <div class="nav-left">
-                <img src="./img/Logo-light.png" alt="">
+                <img src="./img/Logo-light-mode.png" alt="">
                 <i class="fa-solid fa-bell"></i>
                 <i class="fa-solid fa-message"></i>
                 <i class="fa-solid fa-users"></i>
@@ -25,7 +25,7 @@
             <div class="nav-right">
                 <span class="search">
                     <i class="fa-solid fa-magnifying-glass"></i>
-                    <input type="search" >
+                    <input type="search" placeholder="Search">
                 </span>
                 <span class="profile-pic" onclick="dropDown()">
                     <img src="img/profile picture.jpg" alt=""   class="dropbtn">
@@ -46,7 +46,7 @@
                             <p class="toggle-ball"></p>
                         </span>
                     </span>
-                    <hr>
+                    <hr class="dropdown-hr">
                     <span class="feedback">
                         <i class="fa-solid fa-message"></i>
                         <span class="feedback-text">
@@ -54,7 +54,7 @@
                             <p>Help us to improve the new design</p>
                         </span>
                     </span>
-                    <hr>
+                    <hr class="dropdown-hr">
                     <span class="dropdown-setting">
                         <span class="dropdown-setting-icon">
                         <i class="fa-solid fa-gear"></i>
@@ -109,7 +109,9 @@
                 </span>
             </div>
 
+            <hr>
             <div class="left-bottom">
+                <p>Your Shortcuts</p>
                 <span class="left-bottom-icons">
                     <i class="fa-solid fa-circle-plus"></i>
                     <i class="fa-solid fa-circle-plus"></i>
@@ -126,110 +128,104 @@
 
         <!-- BODY MIDDLE -->
         <div class="body-middle">
-            <div class="posts">
-            <div class="post-text">
-                <span class="post-profile-pic">
-                    <img src="img/400138400291_253845.jpg" alt="">
-                </span>
-                <span class="post-name">
-                    <h3>Hawkers Team</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel id quod maxime similique odio molestiae, delectus aliquid, adipisci dicta <strong>#gamers_nite.io</strong></p>
-                </span>
-            </div>
-            <div class="post-item">
-                <img src="" alt="">
-            </div>
-            </div>
-            <div class="posts">
-            <div class="post-text">
-                <span class="post-profile-pic">
-                    <img src="img/400138400291_253845.jpg" alt="">
-                </span>
-                <span class="post-name">
-                    <h3>Loners Team</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel id quod maxime similique odio molestiae, delectus aliquid, adipisci dicta <strong>#battle_field.io</strong></p>
-                </span>
-            </div>
-            <div class="post-item">
-                <img src="" alt="">
-            </div>
-            </div>
-            <div class="posts">
-                <div class="post-text">
-                    <span class="post-profile-pic">
-                        <img src="img/400138400291_253845.jpg" alt="">
-                    </span>
-                    <span class="post-name">
-                        <h3>Loners Team</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel id quod maxime similique odio molestiae, delectus aliquid, adipisci dicta <strong>#battle_field.io</strong></p>
-                    </span>
+           
+                <div class="middle-head-tag">
+                    <a href="#">Following</a>
+                    <a href="#">For you</a>
                 </div>
-                <div class="post-item">
-                    <img src="" alt="">
-                </div>
-                </div>
-                <div class="posts">
-                    <div class="post-text">
-                        <span class="post-profile-pic">
-                            <img src="img/400138400291_253845.jpg" alt="">
+                <span class="create-post">
+                    <span class="user-name">
+                        <span class="user-pic">
+                            <img src="./img/profile picture.jpg" alt="">
                         </span>
-                        <span class="post-name">
-                            <h3>Loners Team</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel id quod maxime similique odio molestiae, delectus aliquid, adipisci dicta <strong>#battle_field.io</strong></p>
-                        </span>
-                    </div>
-                    <div class="post-item">
-                        <img src="" alt="">
-                    </div>
-                    </div>
+                        <h3>Ugbodaga Osmond</h3>
+                        <select name="privacy" id="privacy-select">
+                            <option value="Public">Public</option>
+                            <option value="Private">Private</option>
+                        </select>
+                    </span>
 
-                <a href="#" class="more-post">See more posts
-                </a>
-                <footer>copyright 2022 by osmondcode. All Rights Reserved. powered by <strong> Team </strong></footer>
+                    <input type="text" name="post created" id="post-created" placeholder="What's on your mind, Osmond?">
+
+                    <span class="repository">
+                        <span class="new-repo">
+                            New repository
+                        </span>
+                        <span class="old-repo">
+                            Recent Repository
+                        </span>
+                    </span>
+                </span>
+                
         </div>
         <!-- BODY MIDDLE -->
 
         <!-- BODY RIGHT -->
         <div class="body-right">
-            <div class="followers">
-                <span class="followers-profile-pic">
-                    <h2>followers</h2>
-                    <span class="f-p-pic-i">
-                        <img src="" alt="">
-                    </span>
-                    <span class="f-p-pic-i">
-                        <img src="" alt="">
-                    </span>
-                    <span class="f-p-pic-i">
-                        <img src="" alt="">
-                    </span>
-                </span>
-                <span class="followers-name">
-                    <a href="#">andrew_mac2012</a>
-                    <a href="#">dave_3042</a>
-                    <a href="#">jonathan_mike01</a>
-                </span>
-            </div>
 
-            <div class="following">
-            <span class="following-profile-pic">
-                <h2>following</h2>
-                <span class="f-p-pic-i">
-                    <img src="" alt="">
-                </span>
-                <span class="f-p-pic-i">
-                    <img src="" alt="">
-                </span>
-                <span class="f-p-pic-i">
-                    <img src="" alt="">
-                </span>
-            </span>
-            <span class="following-name">
-                <a href="#">big_boys Team</a>
-                <a href="#">jason0728</a>
-                <a href="#">john6501</a>
-            </span>
+            <!-- MY EVENTS -->
+            <div class="events">
+                <div class="event-tag">
+                    <h3>Events</h3>
+                    <a href="#">See All</a>
+                </div>
+                <!-- CONTENT 1 -->
+                <div class="event-content">
+                    <div class="event-date">
+                        <span class="date-number">
+                            8
+                        </span>
+                        <span class="date-day">
+                            Thu
+                        </span>
+                    </div>
+                    <!-- EVENT CONTENT -->
+                    <span class="e-content">
+                        <h4>Javascript class</h4>
+                        <p>
+                            <i class="fa-regular fa-clock"></i>
+                             4:45 pm
+                        </p>
+                        <a href="#">More info</a>
+                    </span>
+                </div>
+                <!-- CONTENT 2 -->
+                <div class="event-content">
+                    <!-- EVENT DATE -->
+                    <div class="event-date">
+                        <span class="date-number">
+                            13
+                        </span>
+                        <span class="date-day">
+                            Tue
+                        </span>
+                    </div>
+                    <!-- EVENT CONTENT -->
+                    <span class="e-content">
+                        <h4>Python class</h4>
+                        <p>
+                            <i class="fa-regular fa-clock"></i>
+                             4:45 pm
+                        </p>
+                        <a href="#">More info</a>
+                    </span>
+                </div>
             </div>
+            <!-- MY EVENTS -->
+
+            <!-- MY ADVERTISMENT -->
+            <div class="advertisment">
+                <span class="advert-tag">
+                    <h3>Advertisment</h3>
+                    <a href="#">View all</a>
+                </span>
+                <span class="advert-image">
+                    <img src="./img/advert-img.jpg" alt="">
+                </span>
+            </div>
+            <!-- MY ADVERTISMENT -->
+
+            <footer><img src="./img/footer logo.png" alt=""> © 2022 All Rights Reserved.</footer>
         </div>
         <!-- BODY RIGHT -->
 
