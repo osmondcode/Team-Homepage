@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: 1px solid #444;
+    /* border: 1px solid #444; */
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 body{
@@ -236,7 +236,7 @@ hr{
     /* justify-content: space-evenly; */
     align-items: center;
     padding: 0 15px;
-    padding-top: 80px;
+    padding-top: 10vh;
 }
 .middle-head-tag{
     width: 100%;
@@ -261,7 +261,7 @@ hr{
     border-radius: 10px;
     color: #000;
 }
-.create-post{
+.create-post, .posts{
     width: 100%;
     height: 30vh;
     overflow: hidden;
@@ -270,6 +270,9 @@ hr{
     align-items: center;    
     margin: 15px 0;
     padding: 10px;
+    color: #444;
+    background: #fff;
+    border-radius: 10px;
 }
 .user-name{
     width: 100%;
@@ -294,6 +297,7 @@ hr{
     font-size: 1em;
     display: flex;
     align-items: center;
+    font-weight: 600;
 }
 #privacy-select{
     width: 70px;
@@ -307,16 +311,46 @@ hr{
     margin: 10px 5px;
 }
 #post-created{
-    width: 100%;
-    height: 50%;
+    width: 80%;
+    height: 40%;
     background: transparent;
+    text-align: center;
     color: #000;
     border: none;
     outline: none;
-    border-bottom: 2px solid #444;
+    border-bottom: 1px solid #444;
+    display: flex;
+}
+.repository{
+    width: 60%;
+    height: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+.new-repo, .old-repo{
+    background: red;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 10px;
+    width: 140px;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.old-repo{
+    background: green;
 }
 
-
+.posts{
+    min-height: 40vh;
+}
+.user-pic-post img{
+    width: 60px;
+    height: 60px;
+}
 footer
 {
     width: 100%;
