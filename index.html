@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Team-home</title>
 </head>
 <body>
     <div class="container">
@@ -14,19 +14,13 @@
         <nav>
             <!-- LEFT NAVIGATION -->
             <div class="nav-left">
-                <img src="./img/Logo-light-mode.png" alt="">
-                <i class="fa-solid fa-bell"></i>
-                <i class="fa-solid fa-message"></i>
-                <i class="fa-solid fa-users"></i>
+                
             </div>
             <!-- LEFT NAVIGATION -->
 
             <!-- RIGHT NAVIGATION -->
             <div class="nav-right">
-                <span class="search">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                    <input type="search" placeholder="Search">
-                </span>
+                
                 <span class="profile-pic" onclick="dropDown()">
                     <img src="img/profile picture.jpg" alt=""   class="dropbtn">
                     <span class="active"></span>
@@ -92,36 +86,39 @@
         <!-- BODY LEFT -->
         <div class="body-left">
             <div class="left-top">
-                <span class="left-top-icons">
-                    <i class="fa-solid fa-bookmark"></i>
-                    <i class="fa-solid fa-user-circle"></i>
-                    <i class="fa-solid fa-home"></i>
-                    <i class="fa-solid fa-users"></i>
-                    <i class="fa-solid fa-screwdriver-wrench"></i>
-                </span>
-
-                <span class="left-top-links">
-                    <a href="#">Templates</a>
-                    <a href="#">Profile</a>
-                    <a href="#">Home</a>
-                    <a href="#">My Team</a>
-                    <a href="#">My Projects</a>
-                </span>
+                <a href="#">
+                    <i class="fa-solid fa-circle-plus"></i>
+                    <span>Create Group</span>
+                </a>
+                <a href="#">
+                    <i class="fa-solid fa-circle-plus"></i>
+                    <span>Add Friends</span>
+                </a>
+                <a href="#">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span>Buy a Course</span>
+                </a>
             </div>
 
             <hr>
             <div class="left-bottom">
                 <p>Your Shortcuts</p>
-                <span class="left-bottom-icons">
-                    <i class="fa-solid fa-circle-plus"></i>
-                    <i class="fa-solid fa-circle-plus"></i>
-                    <i class="fa-solid fa-circle-plus"></i>
-                </span>
-                <span class="left-bottom-links">
-                    <a href="#">Create Team</a>
-                    <a href="#">Add Friends</a>
-                    <a href="#">New Project</a>
-                </span>
+                <a href="#">
+                    <img src="./img/web-developers.jpg" alt="">
+                    <span>Web Developers</span>
+                </a>
+                <a href="#">
+                    <img src="./img/web-design-courses.jpg" alt="">
+                    <span>Web Design course</span>
+                </a>
+                <a href="#">
+                    <img src="./img/website-experts.jpg" alt="">
+                    <span>Website Experts</span>
+                </a>
+                <a href="#">
+                    <img src="./img/full-stack.jpg" alt="">
+                    <span>Full Stack Development</span>
+                </a>
             </div>
         </div>
         <!-- BODY LEFT -->
@@ -130,7 +127,7 @@
         <div class="body-middle">
            
                 <div class="middle-head-tag">
-                    <a href="#">Following</a>
+                    <a href="#"  id="current">Following</a>
                     <a href="#">For you</a>
                 </div>
                 <span class="create-post">
@@ -181,7 +178,15 @@
 
                     <span class="post-item">
                         <span class="post-item-content">
-
+                                <span class="repository-name">
+                                    <h3>Jonathan_Doe/my-portfolio</h3>
+                                </span>
+                                    <p class="repository-description">
+                                        A website that displays my talent and me to recieve jobs
+                                    </p>
+                                    <span class="date-last-updated">
+                                       updated 4days ago
+                                    </span>
                         </span>
 
                         <!-- POST LIKE AND REPORT -->

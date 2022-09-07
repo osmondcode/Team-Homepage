@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: 1px solid #444;
+    /* border: 1px solid #444; */
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 body{
@@ -43,15 +43,7 @@ nav
     align-items: center;
     justify-content: space-around;
 }
-.nav-left img
-{
-    width: 140px;
-    height: 90px;
-}
-.nav-left i
-{
-    font-size: 1.5em;
-}
+
 .nav-right
 {
     width: 45%;
@@ -59,34 +51,7 @@ nav
     align-items: center;
     justify-content: space-around;
 }
-.nav-right .search
-{
-    width: 60%;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    padding-left: 10px;
-    border-radius: 50px;
-    background: #efefef;
-}
-.nav-right .search i
-{
-    font-size: 1.5em;
-}
-.nav-right .search input
-{
-    width: 80%;
-    height: 30px;
-    margin-left: 10px;
-    border: none;
-    outline: none;
-    font-size: 1.2em;
-    background-color: transparent;
-    color: #222;
-    border-radius: 20px;
-    padding: 5px 0;
-    padding-left: 10px;
-}
+
 .nav-right .profile-pic
 {
     width: 52px;
@@ -133,12 +98,13 @@ nav
 /* BODY LEFT DIV STYLE */
 .body-left
 {
-    height: 90vh;
+    height: 85vh;
     width: 22%;
-    padding-left: 3.5%;
+    padding-left: 3%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
     position: fixed;
     top: 10%;
     color: #1876f2;
@@ -152,76 +118,72 @@ nav
 .left-top
 {
     width: 80%;
-    height: 43vh;
+    height: 38vh;
     display: flex;
-    align-items: flex-start;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
-.left-bottom
-{
-    width: 80%;
-    height: 40vh;
+.left-top a{
+    width: 90%;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
-    position: relative;
+    justify-content: center;
+    height: 45px;
+
 }
-.left-top-icons
-{
-    width: 25%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-    justify-content: space-evenly;
-    font-size: 1.5em;
+.left-top a:hover{
+    box-shadow: 0px 2px 5px 1px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 2px 5px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 2px 5px 1px rgba(0,0,0,0.75);
+    border-radius: 15px;
 }
-.left-top-links
-{
-    width: 75%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-    justify-content: space-evenly;
+.left-top a i{
+    font-size: 30px;
+    margin-right: 15px;
+    color: #1876f2;
+}
+.left-top a span{
     font-size: 1.2em;
 }
-hr{
-    width: 80%;
-    margin: 20px 0;
-    border: none;
-    border-bottom: 0.5px solid #888;
+
+
+.left-bottom
+{
+    width: 90%;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    /* position: relative; */
 }
 .left-bottom p{
     position: absolute;
     color: #444;
     font-weight: 600;
-    top: 0;
-    margin-left: 15px;
+    top: 48%;
+    margin-left: 2px;
 }
-.left-bottom-icons
-{
-    width: 25%;
-    height: 40vh;
+.left-bottom a{
+    width: 100%;
+    padding: 10px 2px;
+    overflow: hidden;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
-    font-size: 2.12em;
 }
-.left-bottom-links
-{
-    width: 75%;
-    height: 40vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    font-size: 1.2em;
+.left-bottom a:hover{
+    box-shadow: 0px 2px 5px 1px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 2px 5px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 2px 5px 1px rgba(0,0,0,0.75);
+    border-radius: 15px;
 }
-.left-bottom-links a
-{
-    text-decoration: none;
+.left-bottom a img{
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-right: 10px;
 }
-
 /* BODY LEFT DIV STYLE */
 
 /* BODY MIDDLE DIV STYLE */
@@ -240,16 +202,19 @@ hr{
 }
 .middle-head-tag{
     width: 100%;
-    height: 8vh;
+    height: 6.5vh;
     display: flex;
     align-items: center;
     border-bottom: 0.5px solid #444;
     font-size: 1.2em;
 }
+#current{
+    border-bottom: 3px solid coral;
+}
 .middle-head-tag a{
     text-decoration: none;
     color: #333;
-    margin: 0 12px 0 8px;
+    margin: 0 12px 0 0px;
     width: 100px;
     padding: 8px;
     display: flex;
@@ -313,6 +278,7 @@ hr{
     align-self: flex-start;
     margin: 10px 5px;
 }
+
 #post-created{
     width: 80%;
     height: 40%;
@@ -361,8 +327,8 @@ hr{
     justify-content: space-between;
 }
 .user-pic-post img{
-    width: 80px;
-    height: 80px;
+    width: 70px;
+    height: 70px;
 }
 .user-details{
     width: 90%;
@@ -477,6 +443,16 @@ hr{
     align-items: center;
     justify-content: space-between;
 }
+.repository-name{
+    width: 100%;
+}
+.repository-description{
+    width: 100%;
+    min-height: 50%;
+}
+.date-last-updated{
+    width: 100%;
+}
 /* POST ITEM */
 footer
 {
@@ -571,8 +547,6 @@ footer img{
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
-    letter-spacing: .7px;
-
 }
 .e-content p{
     font-size: 0.95em;
@@ -858,6 +832,15 @@ footer img{
         top: 10vh;
         min-height: 110vh;
         padding-bottom: 80px;
+    }
+    .post-item{
+        width: 90%;
+    }
+    .post-like p{
+        width: 70%;
+    }
+    .post-item-content{
+        width: 75%;
     }
     .active-link{
         width: 50px;
