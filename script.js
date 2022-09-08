@@ -87,3 +87,19 @@ function dropReportII(){
 
             // SCRIPT FOR REPORT DROP-DOWN LINK
 
+
+
+            // SCRIPT FOR RESPONSIVE SEARCH BAR
+let extendSearch = document.querySelector('.s-icon');
+let searchInput = document.querySelector('#input');
+
+function increase(){
+    if (extendSearch.style.width == 'auto' && searchInput.style.display == 'none'){
+        extendSearch.style.width = '60%';
+        searchInput.style.display = 'flex';
+    }else {
+        extendSearch.style.width = 'auto';
+        searchInput.style.display = 'none';
+    }
+}
+            // SCRIPT FOR RESPONSIVE SEARCH BAR

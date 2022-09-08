@@ -878,12 +878,13 @@ footer img{
 {
     /* NAVIGATION BAR */
     .nav-left{
-        width: 40%;
+        width: 60%;
     }
     .search-bar{
         width: auto;
         padding: 5px;
         background: #efefef;
+        overflow: hidden;
     }
     .nav-right{
         padding: 0;
