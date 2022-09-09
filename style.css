@@ -44,13 +44,18 @@ nav
     justify-content: space-around;
 }
 .nav-left img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 65px;
     height: 65px;
     border-radius: 50%;
     object-fit: cover;
+    cursor: pointer;
 }
 .search-bar{
     width: 60%;
+    padding: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -58,6 +63,7 @@ nav
     border-radius: 30px;
     color: #999;
     background: #fff;
+    cursor: pointer;
 }
 .search-bar input{
     width: 70%;
@@ -81,6 +87,32 @@ nav
     align-items: center;
     justify-content: space-between;
     font-size: 1.7em;
+}
+.nav-right-links a{
+    text-decoration: none;
+    color: #fff;
+    padding: 5px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#active{
+    /* color: #1876f2; */
+    background: #efefef80;
+    box-shadow: 0px 2px 5px 1px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 2px 5px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 2px 5px 1px rgba(0,0,0,0.75);
+    border-radius: 10px;
+    padding: 5px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav-right-links a:hover{
+    background: #efefef80;
+    border-radius: 10px;
 }
 .nav-right .profile-pic
 {
@@ -128,9 +160,9 @@ nav
 /* BODY LEFT DIV STYLE */
 .body-left
 {
-    height: 85vh;
+    height: 89vh;
     width: 22%;
-    padding-left: 3%;
+    /* padding-left: 3%; */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -147,36 +179,83 @@ nav
 }
 .left-top
 {
-    width: 80%;
-    height: 38vh;
+    width: 100%;
+    height: 42vh;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    color: #444;
 }
-.left-top a{
+.user-cover-photo, .user-cover-photo img{
     width: 90%;
+    height: 20vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 45px;
-
-}
-.left-top a:hover{
-    box-shadow: 0px 2px 5px 1px rgba(0,0,0,0.75);
-    -webkit-box-shadow: 0px 2px 5px 1px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 2px 5px 1px rgba(0,0,0,0.75);
-    border-radius: 15px;
-}
-.left-top a i{
-    font-size: 30px;
-    margin-right: 15px;
-    color: #1876f2;
-}
-.left-top a span{
-    font-size: 1.2em;
+    object-fit: cover;
+    border-radius: 10px;
+    position: absolute;
+    top: 2%;
 }
 
+.user-cover-photo img{
+    width: 100%;
+}
+.user-profile-pic{
+    position: absolute;
+    top: 40%;
+    left: 12%;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 3px dotted #efefef;
+}
+.user-profile-pic img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.username{
+    position: absolute;
+    top: 50%;
+    left: 40%;
+}
+.username h3{
+    font-weight: 600;
+}
+.username p{
+    font-size: 100;
+}
+#more-info{
+    width: 90%;
+    height: 12vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    bottom: 0;
+}
+.more-info-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.more-info-content h3, .more-info-content p{
+    font-weight: 500;
+}
 
+hr{
+    width: 80%;
+    border: 1px solid #888;
+    position: absolute;
+    top: 48%;
+}
 .left-bottom
 {
     width: 90%;
@@ -191,7 +270,7 @@ nav
     position: absolute;
     color: #444;
     font-weight: 600;
-    top: 48%;
+    top: 50%;
     margin-left: 2px;
 }
 .left-bottom a{
@@ -844,6 +923,17 @@ footer img{
         width: 27%;
         margin-left: 0;
     }
+    .user-profile-pic{
+        left: 26%;
+        top: 355;
+    }
+    .username{
+        top: 75%;
+        left: 10%;
+    }
+    #more-info{
+        display: none;
+    }
     .body-right{
         display: none;
     }
@@ -882,7 +972,7 @@ footer img{
     }
     .search-bar{
         width: auto;
-        padding: 5px;
+        padding: 10px;
         background: #efefef;
         overflow: hidden;
     }
@@ -899,23 +989,9 @@ footer img{
     .nav-right-links{
         display: none;
     }
-    /* .bottom-nav{
-        display: flex;
-        width: 100%;
-        height: 10vh;
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        font-size: 1.5em;
-        z-index: 100;
-        color: rgba(255, 255, 255, 0.863);
-        background-color: #061539;
-        transition: 1s;
-    } */
-    /* NAVIGATION BAR */
+    #more-info{
+        display: none;
+    }
 
     /* BODY */
     .body{

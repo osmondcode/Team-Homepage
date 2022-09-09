@@ -26,11 +26,21 @@
             <!-- RIGHT NAVIGATION -->
             <div class="nav-right">
                 <span class="nav-right-links">
-                    <i class="fa-solid fa-home"></i>
-                    <i class="fa-solid fa-user-circle"></i>
-                    <i class="fa-solid fa-bookmark"></i>
-                    <i class="fa-solid fa-message"></i>
-                    <i class="fa-solid fa-screwdriver-wrench"></i>
+                    <a href="#">
+                        <i class="fa-solid fa-home" id="active"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-solid fa-user-circle"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-solid fa-bookmark"></i>
+                    </a>
+                    <a href="#">    
+                        <i class="fa-solid fa-message"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-solid fa-screwdriver-wrench"></i>
+                    </a>
                 </span>
                 
                 <span class="profile-pic" onclick="dropDown()">
@@ -98,18 +108,32 @@
         <!-- BODY LEFT -->
         <div class="body-left">
             <div class="left-top">
-                <a href="#">
-                    <i class="fa-solid fa-circle-plus"></i>
-                    <span>Create Group</span>
-                </a>
-                <a href="#">
-                    <i class="fa-solid fa-circle-plus"></i>
-                    <span>Add Friends</span>
-                </a>
-                <a href="#">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                    <span>Buy a Course</span>
-                </a>
+                <span class="user-cover-photo">
+                    <img src="./img/cover-photo.jpg" alt="">
+                </span>
+                <span class="user-profile-pic">
+                    <img src="./img/user-picture.jpg" alt="">
+                </span>
+                <span class="username">
+                    <h3>@osmond_code</h3>
+                    <p>
+                        Front End Developers
+                    </p>
+                </span>
+                <span id="more-info">
+                    <span class="following more-info-content">
+                        <h3>15</h3>
+                        <p>Following</p>
+                    </span>
+                    <span class="followers more-info-content">
+                        <h3>13k</h3>
+                        <p>Followers</p>
+                    </span>
+                    <span class="projects more-info-content">
+                        <h3>60+</h3>
+                        <p>Projects</p>
+                    </span>
+                </span>
             </div>
 
             <hr>
